@@ -17,6 +17,7 @@ mongoose.connect(process.env.mongoURI, {
 });
 
 app.use("/api", require("./routes/routes"));
+app.use("/api/juegos", require("./routes/VideoJuegos"));
 // app.get("/", (req, res) => {
 //   res.send("Hola ahora");
 // });
